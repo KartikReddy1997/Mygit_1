@@ -1,0 +1,13 @@
+Creating a Branch and pusing it (upstream)
+-----------------------------------------------------------------------------------------------------
+git checkout -b "Branch Name"  -> creates a new branch and checkouts to it
+git push -u origin BranchName  -> pushes the new branch "BranchName" to remote and sets upstream as we are using -u
+
+
+How to undo git Add
+----------------------------------------------------------------------------------------------
+git reset
+
+
+
+
