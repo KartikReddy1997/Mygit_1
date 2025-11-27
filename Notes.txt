@@ -11,3 +11,17 @@ git reset
 
 
 
+Upstream Push
+-------------------------
+upstream can be done by boh the below commands
+Both commands do the same exact job
+Used only for first push of a new branch
+1.git push -u origin devFeature1              -> easier to use and -u is shorthand for for --set-upstream
+2.git push --set-upstream origin devFeature1  -> More descriptive
+
+
+
+
+
+
+
