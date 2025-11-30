@@ -1,2 +1,3 @@
 this is the new Feature2 need to be merged
 Updating the file from Child(devFeature2) branch
+Adding new Lines from Child branch (feature2)
