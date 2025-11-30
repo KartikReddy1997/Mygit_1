@@ -1,2 +1,2 @@
 this is the new Feature2 need to be merged
-Updating the File
+Adding New Lines to Test Merge Conflicts
