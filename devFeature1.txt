@@ -2,3 +2,4 @@ This is first Feature to be merged in Dev
 Adding stashing changes to Feature1
 
 Git Adding Commit 01
+Git Adding Commit 02
