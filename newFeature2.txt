@@ -1,2 +1,4 @@
 this is the new Feature2 need to be merged
 Updating the file from Child(devFeature2) branch
+New Lines to Test Rebase challenge
+Task 2
