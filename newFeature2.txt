@@ -1,2 +1,2 @@
 this is the new Feature2 need to be merged
-Adding New Lines to Test Merge Conflicts
+Updating the file from Child(devFeature2) branch
