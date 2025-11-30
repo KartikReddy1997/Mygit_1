@@ -3,3 +3,4 @@ Adding stashing changes to Feature1
 
 Git Adding Commit 01
 Git Adding Commit 02
+Git Adding Commit 03
