@@ -1,12 +1,99 @@
-Creating a Branch and pusing it (upstream)
+Creating a Branch and pushing it (upstream)
 -----------------------------------------------------------------------------------------------------
 git checkout -b "Branch Name"  -> creates a new branch and checkouts to it
 git push -u origin BranchName  -> pushes the new branch "BranchName" to remote and sets upstream as we are using -u
+		OR
+git push --set-upstream origin <branch-name>
 
 
 How to undo git Add
 ----------------------------------------------------------------------------------------------
 git reset
+
+
+
+
+Upstream Push
+-------------------------
+upstream can be done by boh the below commands
+Both commands do the same exact job
+Used only for first push of a new branch
+1.git push -u origin devFeature1              -> easier to use and -u is shorthand for for --set-upstream
+2.git push --set-upstream origin devFeature1  -> More descriptive
+
+
+
+Switching Between Branches
+----------------------------------------------
+git switch branchName
+git switch -c newBranchName    -> if its a new Branch
+
+git checkout branchName
+git checkout -b newBranchName  -> if its a new Branch
+
+Command			Purpose					Safe?
+--------------------------------------------------------------------------
+git switch	Switching/creating branches			✅ Yes
+git checkout	Switching/creating branches + restoring files	⚠️ Mixed
+
+
+
+
+
+Undo the last commit but KEEP the changes (soft reset)
+--------------------------------------------------
+git reset HEAD~1
+
+
+Compare Branches
+-------------------------------
+git diff branch1 branch2
+
+
+
+Git Merge vs Rebase
+---------------------------------------------------
+Rebase : https://www.youtube.com/watch?v=DkWDHzmMvyg
+
+
+Git Reset vs Revert
+------------------------------------------------
+https://www.youtube.com/watch?v=GytsxgB4-HU
+
+
+
+When you do Git Status
+---------------------------------------------
+If you see something like:
+
+"Your branch is ahead of 'origin/dev' by 3 commits" → commits are NOT pushed.
+"Your branch is up to date with 'origin/dev'" → commits are ALREADY pushed.
+"Your branch is behind 'origin/dev' by 2 commits" → remote has commits you don’t have.
+"Your branch and 'origin/dev' have diverged" → both sides have new commits.
+
+
+
+
+Git pull vs Fetch
+---------------------------------------
+Pull : git pull is used to get the latest updates from the remote branch and merge them into your local branch.
+
+
+
+
+Ways to remove a pushed commit
+--------------------------------------------------
+1.# find bad commit hash (from git log or GitHub)
+	git revert <bad-commit-hash>
+	git push origin devFeature1
+
+
+2.# locally reset to desired commit (example: one commit back)
+	git reset --hard HEAD~1
+
+# push the rewritten history to remote
+	git push --force-with-lease origin devFeature1
+
 
 
 
