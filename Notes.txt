@@ -18,7 +18,7 @@ Upstream Push
 upstream can be done by boh the below commands
 Both commands do the same exact job
 Used only for first push of a new branch
-1.git push -u origin devFeature1              -> easier to use and -u is shorthand for for --set-upstream
+1.git push -u origin devFeature1              -> easier to use and -u is shorthand for --set-upstream
 2.git push --set-upstream origin devFeature1  -> More descriptive
 
 
@@ -26,7 +26,7 @@ Used only for first push of a new branch
 Switching Between Branches
 ----------------------------------------------
 git switch branchName
-git switch -c newBranchName    -> if its a new Branch
+git switch -c newBranchName    -> if it is a new Branch
 
 git checkout branchName
 git checkout -b newBranchName  -> if its a new Branch
@@ -67,7 +67,7 @@ When you do Git Status
 If you see something like:
 
 "Your branch is ahead of 'origin/dev' by 3 commits" → commits are NOT pushed.
-"Your branch is up to date with 'origin/dev'" → commits are ALREADY pushed.
+"Your branch is up-to-date with 'origin/dev'" → commits are ALREADY pushed.
 "Your branch is behind 'origin/dev' by 2 commits" → remote has commits you don’t have.
 "Your branch and 'origin/dev' have diverged" → both sides have new commits.
 
